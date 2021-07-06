@@ -15,15 +15,18 @@
       // // my_name = 1;
 
       (function printName() {
+        // printSurname();
         document.getElementById("div1").innerHTML = my_name;
       })();
       // printName();
 
-      function printSurname() {
+      (function printSurname() {
         my_name = "Mark";
         var my_surname;
         my_surname = "Ibrahim";
-      }
+
+        document.getElementById("div1").innerHTML = my_name;
+      })();
 
       // // var person = new Person();
       // const person = {
