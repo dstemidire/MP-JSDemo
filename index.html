@@ -9,6 +9,7 @@
   <body>
     <div id="div1"></div>
     <div id="div2"></div>
+    <div id="div3"></div>
     <script>
       var number1 = 2,
         number2 = 4;
@@ -20,10 +21,13 @@
       document.getElementById("div1").innerHTML = addNums();
 
       function multiplyNums() {
+        let number1 = 3;
+        let number2 = 2;
         return number1 * number2;
       }
 
       document.getElementById("div2").innerHTML = multiplyNums();
+      document.getElementById("div3").innerHTML = addNums();
 
       // var my_name;
       // my_name = "Yusuf";
