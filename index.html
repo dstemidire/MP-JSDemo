@@ -10,24 +10,45 @@
     <div id="div1"></div>
     <div id="div2"></div>
     <div id="div3"></div>
+
     <script>
-      var number1 = 2,
-        number2 = 4;
+      var person = {
+        name: "Yusuf",
+        email: "yusuf@gmail.com",
+        job_title: "Student",
+        getName: function () {
+          return this.name;
+        },
+        setName: function (name) {
+          this.name = name;
+        },
+      };
 
-      function addNums() {
-        return number1 + number2;
-      }
+      var div1 = document.getElementById("div1");
+      var div2 = document.getElementById("div2");
+      var div3 = document.getElementById("div3");
 
-      document.getElementById("div1").innerHTML = addNums();
+      div1.innerHTML = person.name;
+      person.setName("Dangote");
+      div2.innerHTML = person.getName();
 
-      function multiplyNums() {
-        let number1 = 3;
-        let number2 = 2;
-        return number1 * number2;
-      }
+      // var number1 = 2,
+      //   number2 = 4;
 
-      document.getElementById("div2").innerHTML = multiplyNums();
-      document.getElementById("div3").innerHTML = addNums();
+      // function addNums() {
+      //   return number1 + number2;
+      // }
+
+      // document.getElementById("div1").innerHTML = addNums();
+
+      // function multiplyNums() {
+      //   let number1 = 3;
+      //   let number2 = 2;
+      //   return number1 * number2;
+      // }
+
+      // document.getElementById("div2").innerHTML = multiplyNums();
+      // document.getElementById("div3").innerHTML = addNums();
 
       // var my_name;
       // my_name = "Yusuf";
