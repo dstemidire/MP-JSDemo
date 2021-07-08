@@ -11,7 +11,7 @@
       <input type="text" placeholder="Name" /><br />
       <input type="text" placeholder="Email" /><br />
     </form>
-    <button onclick="sub(alertFunc)">Click</button>
+    <button onclick="sub(fun)">Click</button>
 
     <div id="div1"></div>
 
@@ -22,13 +22,21 @@
       //     }, 4000);
       //   }
 
-      function sub(alertFunc) {
+      function sub(callBack) {
         document.getElementById("div1").innerHTML =
           "I need not wait for the alert()";
-        setTimeout(alertFunc, 4000);
+        setTimeout(callBack, 4000);
       }
-      function alertFunc() {
-        alert("Submitted");
+
+      //   function alertFunc() {
+      //     alert("Submitted");
+      //   }
+
+      function fun() {
+        let i = 0;
+        while (true) {
+          i++;
+        }
       }
     </script>
   </body>
